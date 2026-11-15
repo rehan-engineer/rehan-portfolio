@@ -291,12 +291,3 @@ nav a:hover {
     border: 4px solid #00eaff;
     box-shadow: 0 0 20px #00eaff;
 }
-#home .profile-photo {
-    width: 180px !important;
-    height: 180px !important;
-    max-width: 180px !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
-    display: block !important;
-    margin: 20px auto !important;
-}
