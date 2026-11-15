@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rehan's World | Portfolio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080d1a;
+    color: white;
+}
+
+/* NAVBAR */
+
+header {
+    background: #111a2e;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #00d9ff;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d9ff;
+}
+
+/* HOME */
+
+.home {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.home h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.home h1 span {
+    color: #00d9ff;
+}
+
+.home p {
+    font-size: 20px;
+    color: #b8c4d9;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00d9ff;
+    color: #080d1a;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.08);
+}
+
+/* SECTIONS */
+
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 35px;
+    color: #00d9ff;
+    margin-bottom: 35px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    color: #c5cddd;
+    font-size: 18px;
+}
+
+/* SKILLS */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background: #17243c;
+    padding: 25px;
+    border-radius: 12px;
+    width: 180px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    background: #203957;
+}
+
+/* EDUCATION */
+
+.education-box {
+    background: #17243c;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 2;
+}
+
+/* PROJECTS */
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project {
+    background: #17243c;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+/* CONTACT */
+
+.contact p {
+    margin: 15px;
+    color: #c5cddd;
+}
+
+.contact a {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    background: #111a2e;
+    text-align: center;
+    padding: 25px;
+    color: #b8c4d9;
+}
+
+/* MOBILE */
+
+@media(max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 13px;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+.profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00d9ff;
+    margin-bottom: 25px;
+    box-shadow: 0 0 25px #00d9ff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+<section id="home">
+    <img src="profile.jpg" class="profile-photo" alt="Rehan Khan">
+    <h1>Hello, I'm Rehan</h1>
+    <h2>Mechanical Engineering Student</h2>
+    <p>Welcome to my personal portfolio website!</p>
+</section>
+<div class="logo">REHAN'S WORLD</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- HOME -->
+
+<section class="home" id="home">
+    <img src="./images/rehan.jpeg" alt="Rehan" class="profile">
+<h1>Hello,I'm<span>Rehan</span></h1>
+
+<p>Mechanical Engineering Student | Future Engineer</p>
+
+<a href="#about" class="btn">Explore My World</a>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+Hello! My name is Rehan.
+
+I am a Mechanical Engineering student who loves
+technology, innovation and learning new skills.
+
+My goal is to become a successful engineer
+and build something meaningful in the future.
+
+Welcome to my personal website!
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="section-title">My Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill">
+<h3>HTML</h3>
+<p>Web Development</p>
+</div>
+
+<div class="skill">
+<h3>CSS</h3>
+<p>Web Designing</p>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+<p>Programming</p>
+</div>
+
+<div class="skill">
+<h3>Mechanical</h3>
+<p>Engineering</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2 class="section-title">My Education</h2>
+
+<div class="education-box">
+
+<h3>B.E. Mechanical Engineering</h3>
+
+<p>Currently Pursuing</p>
+
+<p>Learning Engineering, Design
+and Technology.</p>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">My Projects</h2>
+
+<div class="projects-container">
+
+<div class="project">
+
+<h3>My First Website</h3>
+
+<p>My personal website built using HTML and CSS.</p>
+
+</div>
+
+<div class="project">
+
+<h3>Mechanical Project</h3>
+
+<p>Engineering projects and practical learning.</p>
+
+</div>
+
+<div class="project">
+
+<h3>Future Projects</h3>
+
+<p>More exciting projects coming soon!</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<p>Let's connect and create something amazing!</p>
+
+<p>Email:
+<a href="mailto:YOUR_EMAIL@gmail.com">
+YOUR_EMAIL@gmail.com
+</a>
+</p>
+
+<p>Made with ❤️ by Rehan</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Rehan's World. All Rights Reserved.</p>
+
+<p>Created with ❤️ by Rehan</p>
+
+</footer>
+
+<script>
+
+// Welcome Message
+
+console.log("Welcome to Rehan's World!");
+
+</script>
+<header>
+    <h2 class="logo">MY PORTFOLIO</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<a href="#about" class="btn">Explore More</a>
+<section id="about">
+    <h1>About Me</h1>
+    <p>
+        Hello! My name is Rehan.
+        I am a Mechanical Engineering student.
+        I am passionate about technology,
+        machines and learning new skills.
+    </p>
+</section>
+<section id="skills">
+    <h1>My Skills</h1>
+
+    <div class="skill-box">
+        <div>AutoCAD</div>
+        <div>SolidWorks</div>
+        <div>Engineering Drawing</div>
+        <div>MS Office</div>
+        <div>Basic Programming</div>
+    </div>
+</section>
+<section id="projects">
+    <h1>My Projects</h1>
+
+    <div class="project-container">
+
+        <div class="project-card">
+            <h2>Project 1</h2>
+            <p>Mechanical Engineering Project</p>
+        </div>
+
+        <div class="project-card">
+            <h2>Project 2</h2>
+            <p>Design and Development</p>
+        </div>
+
+        <div class="project-card">
+            <h2>Project 3</h2>
+            <p>Engineering Innovation</p>
+        </div>
+
+    </div>
+</section>
+<section id="contact">
+
+    <h1>Contact Me</h1>
+
+    <p>Let's connect and work together!</p>
+
+    <div class="contact-info">
+
+        <h2>Rehan Khan</h2>
+
+        <p>📧 Email:
+        <a href="mailto:wwwrehankhan17@gmail.com">
+        wwwrehankhan17@gmail.com</a></p>
+
+        <p>📱 Phone:
+        <a href="tel:9036673963">
+        9036673963</a></p>
+
+        <p>📍 Location: Kalaburagi, Karnataka</p>
+
+    </div>
+
+    <h2>Connect With Me</h2>
+
+    <div class="social-links">
+
+        <a href="https://www.instagram.com/rehan_7055/"
+        target="_blank">Instagram</a>
+
+        <a href="https://www.threads.net/@rehan_7055"
+        target="_blank">Threads</a>
+
+        <a href="https://www.linkedin.com/in/rehan-khan-9aa06b255/"
+        target="_blank">LinkedIn</a>
+
+        <a href="https://x.com/RehanKhan66412"
+        target="_blank">Twitter / X</a>
+
+    </div>
+
+    <form class="contact-form">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+<footer>
+    <h2>Rehan Khan</h2>
+    <p>Mechanical Engineering Student</p>
+    <p>Thank you for visiting my website!</p>
+    <p>© 2026 Rehan Khan. All Rights Reserved.</p>
+</footer>
+<script>
+document.querySelector(".contact-form")
+.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    let name = this.querySelector(
+        'input[type="text"]').value;
+
+    let email = this.querySelector(
+        'input[type="email"]').value;
+
+    let message = this.querySelector(
+        'textarea').value;
+
+    let subject = encodeURIComponent(
+        "Website Contact from " + name);
+
+    let body = encodeURIComponent(
+        "Name: " + name +
+        "\nEmail: " + email +
+        "\nMessage: " + message);
+
+    window.location.href =
+        "mailto:wwwrehankhan17@gmail.com?subject="
+        + subject + "&body=" + body;
+});
+</script>
+</body>
+</html>
